@@ -21,6 +21,6 @@ export class RegisterUserComponent implements OnInit
   userRegister()
   {
     console.log(this.user);
-    this.registerService.registerUser(this.user).subscribe(data=>{alert("User registered succesfully?")},error=>alert("Sorry user not registered"))
+    this.registerService.registerUser(this.user).subscribe(data=>{alert("Usuario registrado con exito")},error=>alert("El usuario no se ha podido registrar"))
   }
 }

@@ -7,11 +7,17 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RegisterUserComponent } from './register-user/register-user.component';
+import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
+import { MenuComponent } from './menu/menu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    RegisterUserComponent
+    RegisterUserComponent,
+    HomeComponent,
+    LoginComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
