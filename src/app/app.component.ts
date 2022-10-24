@@ -12,6 +12,7 @@ export class AppComponent {
 
   ngOnInit()
   {
+    /*
     this.http.get("",{responseType: 'text'}).subscribe((resp:any) =>
     {
       this.title = resp;
@@ -20,5 +21,6 @@ export class AppComponent {
     {
       console.log(error); //se imprime el tipo de error
     }
+    */
   }
 }
