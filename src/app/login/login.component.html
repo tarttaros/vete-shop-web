@@ -1,18 +1,22 @@
 <app-menu></app-menu>
+<body>
 <div class="container">
-  <div class="row m-3">
-    <div class="col-md-6 mx-auto">
-      <div class="card" >
-        <div class="card-header text-center">
-          Inicio de sesion
-        </div>
-        <div class="card-body" id="fathercontainer">
-          <button class="btn btn-outline-danger btn-lg" id="soncontainer1"> Iniciar sesion</button>
-          <br>
-          <button class="btn btn-outline-danger btn-lg" routerLink="/register-user" id="soncontainer2">registrarse</button>
-        </div>
-      </div>
+  <h1>Iniciar sesion</h1>
+  <form>
+    <div class="input-group">
+      <input type="text" id="email" required class="input">
+      <label for="email" class="input-label">Correo</label>
     </div>
-  </div>
+    <br>
+    <div class="input-group">
+      <input type="password" id="password" required class="input">
+      <label for="password" class="input-label">Contraseña</label>
+    </div>
+    <br>
+    <button class="btn">Enviar</button>
+    <p class="text">Dont have an acount?
+      <a routerLink="/register-user">Crear cuenta</a></p>
+  </form>
 </div>
+</body>
 <app-footer></app-footer>
