@@ -1,0 +1,13 @@
+#fathercontainer {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+#soncontainer1 {
+  align-self: center;
+}
+
+#soncontainer2 {
+  align-self: center;
+}
