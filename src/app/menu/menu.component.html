@@ -1,7 +1,8 @@
 <body>
-<nav class="navbar navbar-expand-lg  navbar-dark bg-black mb-3">
+<nav class="navbar navbar-expand-lg  navbar-dark mb-3">
   <div class="container-fluid">
-    <a class="navbar-brand" routerLink="/">vete-shop</a>
+    <a class="navbar-brand" routerLink="/">
+      <i class="fa fa-paw" aria-hidden="true"></i> vete-shop</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -16,7 +17,8 @@
             <i class="fas fa-list"></i>  Productos</a>
         </li>
       </ul>
-      <button id="startSesion" type="submit" routerLink="/login">iniciar sesion</button>
+      <button *ngIf="gStaticElement == false" id="endSession" type="submit" routerLink="/" (click)="logout()">Cerrar Sesion</button>
+      <button *ngIf="gStaticElement == true" id="startSession" type="submit" routerLink="/login">iniciar sesion</button>
     </div>
   </div>
 </nav>

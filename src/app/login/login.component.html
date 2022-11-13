@@ -2,21 +2,20 @@
 <body>
 <div class="container">
   <h1>Iniciar sesion</h1>
-  <form>
+  <form >
     <div class="input-group">
-      <input type="text" id="email" required class="input">
-      <label for="email" class="input-label">Correo</label>
+      <input required type="text" id="username" required class="input" name="userName" [(ngModel)] = "tokenRequest.userName">
+      <label for="username" class="input-label">Nombre de usuario</label>
     </div>
     <br>
     <div class="input-group">
-      <input type="password" id="password" required class="input">
+      <input required type="password" id="password" required class="input" name="password" [(ngModel)] = "tokenRequest.password">
       <label for="password" class="input-label">Contraseña</label>
     </div>
     <br>
-    <button class="btn">Enviar</button>
-    <p class="text">Dont have an acount?
+    <button class="btn"(click)="userLogin()" routerLink="/">Enviar</button>
+    <p class="text">No tienes una cuenta?
       <a routerLink="/register-user">Crear cuenta</a></p>
   </form>
 </div>
 </body>
-<app-footer></app-footer>

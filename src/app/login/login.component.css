@@ -7,8 +7,8 @@
   border: none;
   border-radius: 4px;
   font: inherit;
-  color: #fff;
-  background-color: transparent;
+  color: rgb(175, 143, 255);
+  background-color: #fff;
   outline: 2px solid #fff;
 }
 
@@ -23,9 +23,9 @@
 .input:focus + .input-label,
 .input:valid + .input-label {
   transform: translate(10px, -14px) scale(.8);
-  color: #d1c5fc;
+  color: #000000;
   padding-inline: 5px;
-  background-color: #393e46;
+  background-color: rgb(175, 143, 255);
 }
 
 .input:is(:focus, :valid) {
@@ -34,8 +34,8 @@
 
 body {
   font-family: "Multi", sans-serif;
-  background-color: #c8d9ff;
-  color: #fff;
+  background-color: #fff;
+  color: rgb(144, 103, 248);
   display: flex;
   flex-direction: column;
   align-items: top;
@@ -46,7 +46,7 @@ body {
 }
 
 .container {
-  background-color: #393e467d;
+  background-color: #b1a0d489;
   padding: 20px 40px;
   border-radius: 5px;
 }
@@ -58,18 +58,18 @@ body {
 
 .container a {
   text-decoration: none;
-  color: lightblue;
+  color: rgb(72, 0, 255);
 }
 
 .btn {
   cursor: pointer;
   display: inline-block;
   width: 100%;
-  background: rgb(184, 237, 255);
+  background: rgb(175, 143, 255);
   padding: 15px;
   font-family: inherit;
   font-size: 16px;
-  color: #393e467d;
+  color: #fff;
   border: 0;
   border-radius: 5px;
 }
