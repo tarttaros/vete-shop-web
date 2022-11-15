@@ -2,8 +2,8 @@ import { User } from './user';
 
 export class TokenResponse {
 
-    id!: string;
+    email!: string;
     expirationDate!: number;
-    userName!: User["name"];
+    token!: string;
 
 }

@@ -10,8 +10,16 @@ import { RegisterUserComponent } from './register-user/register-user.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { MenuComponent } from './menu/menu.component';
-import { ProductsComponent } from './products/products.component';
+import { ProductComponent } from './product/product.component';
 import { FooterComponent } from './footer/footer.component';
+import { LoginAdminComponent } from './login-admin/login-admin.component';
+import { LoginVetComponent } from './login-vet/login-vet.component';
+import { RegisterVetComponent } from './register-vet/register-vet.component';
+import { VetsComponent } from './vets/vets.component';
+import { UsersComponent } from './users/users.component';
+import { RegisterProductComponent } from './register-product/register-product.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatListModule} from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -20,14 +28,22 @@ import { FooterComponent } from './footer/footer.component';
     HomeComponent,
     LoginComponent,
     MenuComponent,
-    ProductsComponent,
-    FooterComponent
+    FooterComponent,
+    LoginAdminComponent,
+    LoginVetComponent,
+    RegisterVetComponent,
+    VetsComponent,
+    UsersComponent,
+    ProductComponent,
+    RegisterProductComponent
   ],
   imports: [
+    MatListModule,
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

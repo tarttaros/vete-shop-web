@@ -1,6 +1,6 @@
 export class TokenRequest {
 
-    userName!: string;
+    email!: string;
     password!: string;
 
 }

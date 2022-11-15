@@ -1,12 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthenticationService } from '../services/authentication.service';
 
 @Component({
-  selector: 'app-menu',
-  templateUrl: './menu.component.html',
-  styleUrls: ['./menu.component.css']
+  selector: 'app-vets',
+  templateUrl: './vets.component.html',
+  styleUrls: ['./vets.component.css']
 })
-export class MenuComponent implements OnInit {
+export class VetsComponent implements OnInit {
 
   constructor() { }
 
@@ -44,19 +43,14 @@ export class MenuComponent implements OnInit {
   }
 
   get gStaticUser(){
-    return MenuComponent.user;
+    return VetsComponent.user;
   }
 
   get gStaticVet(){
-    return MenuComponent.vet;
+    return VetsComponent.vet;
   }
 
   get gStaticAdmin(){
-    return MenuComponent.admin;
+    return VetsComponent.admin;
   }
-
-  logout(){
-    AuthenticationService.logout();
-  }
-
 }

@@ -1,6 +1,6 @@
 import { Component,OnInit } from "@angular/core";
 import { RegisterService } from "../services/register.service";
-import { User } from "../user";
+import { User } from "../class/user";
 
 @Component
 ({
@@ -18,7 +18,6 @@ export class RegisterUserComponent implements OnInit
 
   userRegister()
   {
-    console.log(this.user);
     this.registerService.registerUser(this.user).subscribe(data=>{alert("Usuario registrado con exito")},error=>alert("El usuario no se ha podido registrar"))
   }
 }

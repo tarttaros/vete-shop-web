@@ -1,7 +1,7 @@
 <app-menu></app-menu>
 <body>
 <div class="container col-md-6">
-  <h1>Iniciar sesion</h1>
+  <h1>Iniciar sesion Veterinario</h1>
   <form >
     <div class="input-group">
       <input required type="text" id="email" required class="input" name="email" [(ngModel)] = "tokenRequest.email">
@@ -13,15 +13,7 @@
       <label for="password" class="input-label">Contraseña</label>
     </div>
     <br>
-    <button class="btn"(click)="userLogin()" routerLink="/">Enviar</button>
-    <p class="text">No tienes una cuenta?
-      <a routerLink="/register-user">Crear cuenta</a></p>
-    <p class="text">Iniciar sesion como: </p>
-    <a routerLink="/login-vet">
-      <i class="fas fa-sign-in"></i> veterinario </a>
-      <p></p>
-    <a routerLink="/login-admin">
-      <i class="fas fa-lock"></i> administrador</a>
+    <button class="btn"(click)="vetLogin()" routerLink="/">Enviar</button>
   </form>
 </div>
 </body>
