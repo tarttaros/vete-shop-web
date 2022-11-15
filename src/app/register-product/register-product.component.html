@@ -22,16 +22,6 @@
       <label for="exampleFormControlInput1" class="form-label">Precio</label>
       <input type="text" class="form-control" id="price" name="price" [(ngModel)] = "product.price">
     </div>
-<!--
-    <a class="btn btn-primary" (click)="showCategories()">Categoria</a>
-    <mat-selection-list #categories>
-      <mat-list-option *ngFor="let categories of typesOfCategories" name="productCategories" [(ngModel)] = "product.productCategories">
-        {{categories}}
-      </mat-list-option>
-    </mat-selection-list>
-
-    <p>Options selected: {{categories.selectedOptions}}</p>
--->
     <button type="submit" class="btn btn-primary"> Confirmar</button>
   </form>
 </div>

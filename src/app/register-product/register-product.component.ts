@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { RegisterService } from '../services/register.service';
 import { Product } from '../class/product';
 import { CategoryService } from '../services/category.service';
-import { Category } from '../class/category';
 
 @Component({
   selector: 'app-register-product',

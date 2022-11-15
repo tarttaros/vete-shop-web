@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Product } from '../class/product';
+import { ProductoService } from '../services/producto.service';
 
 @Component({
   selector: 'app-product',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductComponent implements OnInit {
 
-  constructor() { }
+  products !: Product[];
+  product : Product = new Product();
+  displayedColumns: string[] = ['Nombre', 'Precio', 'Cantidad', 'Descripcion'];
+  constructor(private productService: ProductoService) { }
 
-  ngOnInit(): void {
+    ngOnInit(): void {
+      this.productService.showProducts();
+      this.products = ProductoService.products;
+      ProductoService.products = [];
   }
 
   static user: Boolean = true;
@@ -53,4 +61,5 @@ export class ProductComponent implements OnInit {
   get gStaticAdmin(){
     return ProductComponent.admin;
   }
+
 }

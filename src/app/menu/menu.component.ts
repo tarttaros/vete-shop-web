@@ -13,14 +13,14 @@ export class MenuComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  static user: Boolean = true;
+  static user1: Boolean = true;
 
   static showDataUser() {
-      this.user = true;
+      this.user1 = true;
   }
 
   static hideDataUser() {
-      this.user = false;
+      this.user1 = false;
   }
 
   static vet: Boolean = true;
@@ -44,7 +44,7 @@ export class MenuComponent implements OnInit {
   }
 
   get gStaticUser(){
-    return MenuComponent.user;
+    return MenuComponent.user1;
   }
 
   get gStaticVet(){

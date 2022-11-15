@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { MenuComponent } from '../menu/menu.component';
 import { VetsComponent } from '../vets/vets.component';
+import { UserComponent } from '../user/user.component';
 
 @Injectable({
   providedIn: 'root'
@@ -16,6 +17,9 @@ export class AuthenticationService {
     VetsComponent.showDataUser();
     VetsComponent.showDataAdmin();
     VetsComponent.showDataVet();
+    UserComponent.showDataUser();
+    UserComponent.showDataAdmin();
+    UserComponent.showDataVet();
     localStorage.removeItem("id_token_user");
     localStorage.removeItem("expires_at_user");
     localStorage.removeItem("id_token_admin");

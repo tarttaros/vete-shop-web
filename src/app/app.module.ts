@@ -16,10 +16,12 @@ import { LoginAdminComponent } from './login-admin/login-admin.component';
 import { LoginVetComponent } from './login-vet/login-vet.component';
 import { RegisterVetComponent } from './register-vet/register-vet.component';
 import { VetsComponent } from './vets/vets.component';
-import { UsersComponent } from './users/users.component';
 import { RegisterProductComponent } from './register-product/register-product.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatListModule} from '@angular/material/list';
+import {MatCardModule} from '@angular/material/card';
+import {MatTableModule} from '@angular/material/table';
+import { UserComponent } from './user/user.component';
 
 @NgModule({
   declarations: [
@@ -33,17 +35,19 @@ import {MatListModule} from '@angular/material/list';
     LoginVetComponent,
     RegisterVetComponent,
     VetsComponent,
-    UsersComponent,
     ProductComponent,
-    RegisterProductComponent
+    RegisterProductComponent,
+    UserComponent
   ],
   imports: [
+    MatCardModule,
     MatListModule,
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -8,6 +8,7 @@ import { DateService } from './date.service';
 import { MenuComponent } from '../menu/menu.component';
 import { VetsComponent } from '../vets/vets.component';
 import { ProductComponent } from '../product/product.component';
+import { UserComponent } from '../user/user.component';
 
 @Injectable({
   providedIn: 'root'
@@ -38,6 +39,8 @@ export class LoginService {
     const expiresAt = authResult1.expirationDate;
     MenuComponent.hideDataUser();
     VetsComponent.hideDataUser();
+    UserComponent.hideDataUser();
+    ProductComponent.hideDataUser();
     localStorage.setItem('id_token_user', authResult1.token);
     localStorage.setItem("expires_at_user", JSON.stringify(expiresAt.valueOf()));
     /*
@@ -50,6 +53,7 @@ export class LoginService {
     MenuComponent.hideDataAdmin();
     VetsComponent.hideDataAdmin();
     ProductComponent.hideDataAdmin();
+    UserComponent.hideDataAdmin();
     localStorage.setItem('id_token_admin', authResult2.token);
     localStorage.setItem("expires_at_admin", JSON.stringify(expiresAt.valueOf()));
     /*
@@ -61,6 +65,8 @@ export class LoginService {
     const expiresAt = authResult3.expirationDate;
     MenuComponent.hideDataVet();
     VetsComponent.hideDataVet();
+    UserComponent.hideDataVet();
+    ProductComponent.hideDataVet();
     localStorage.setItem('id_token_vet', authResult3.token);
     localStorage.setItem("expires_at_vet", JSON.stringify(expiresAt.valueOf()));
     /*

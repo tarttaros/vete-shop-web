@@ -8,7 +8,7 @@ import { LoginAdminComponent } from './login-admin/login-admin.component';
 import { LoginVetComponent } from './login-vet/login-vet.component';
 import { RegisterVetComponent } from './register-vet/register-vet.component';
 import { VetsComponent } from './vets/vets.component';
-import { UsersComponent } from './users/users.component';
+import { UserComponent } from './user/user.component';
 import { RegisterProductComponent } from './register-product/register-product.component';
 
 const routes: Routes = [
@@ -18,7 +18,7 @@ const routes: Routes = [
   { path: 'login-admin', component: LoginAdminComponent},
   { path: 'product', component: ProductComponent},
   { path: 'vets', component: VetsComponent},
-  { path: 'users', component: UsersComponent},
+  { path: 'user', component: UserComponent},
   { path: 'register-user', component: RegisterUserComponent},
   { path: 'register-vet', component: RegisterVetComponent},
   { path: 'register-product', component: RegisterProductComponent},
