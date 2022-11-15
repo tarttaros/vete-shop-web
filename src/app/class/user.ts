@@ -6,4 +6,5 @@ export class User
   email !: string;
   password !: string;
   sex !: number;
+  photoUrl!: string;
 }
